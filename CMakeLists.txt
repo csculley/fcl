@@ -194,7 +194,7 @@ if(NOT ccd_FOUND)
   endif()
 endif()
 
-if(NOT ccd_FOUND)
+if(NOT ccd_FOUND AND NOT TARGET ccd)
   message(FATAL_ERROR "CCD is required by FCL")
 endif()
 
